@@ -1,22 +1,120 @@
-.App {
+header {
+  background: var(--background);
+  text-align: center;
+  position: fixed;
+  z-index: 999;
+  width: 100%;
+  top: 0;
+}
+
+/* makes it tabbale */
+.nav-toggle {
+  position: absolute !important;
+  top: -9999px !important;
+  left: -9999px !important;
+}
+
+.nav-toggle:focus ~ .nav-toggle-label {
+  outline: 3px solid rgba(lightblue, 0.75);
+}
+
+.nav-toggle-label span::before {
+  bottom: 7px;
+}
+
+.nav-toggle-label span::after {
+  top: 7px;
+}
+
+nav {
+  position: absolute;
+  top: 100%;
+  background: var(--background);
+  width: 100%;
+  transform: scale(1, 0);
+  align-items: center;
+}
+.logo1 {
+  margin-top: 68px;
+}
+.content {
+  height: auto;
+  background-color: #05386b; /* second color */
+  background-blend-mode: multiply;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+}
+.container1 {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 1300px;
+  padding: 20px;
+  align-items: stretch;
+  justify-content: flex-start;
+}
+.container1 > * {
+  margin: 10px;
+  flex: 1;
+  min-width: 400px;
+  max-width: 400px;
+}
+.footer {
+  height: 20%;
+  /* position: fixed; */
+
+  width: 100%;
+  background-color: var(--background);
+  color: black;
+  text-align: center;
+}
+.color {
+  color: blue;
+}
+.p {
+  margin: 0;
+  padding: 10px;
+}
+.center {
+  display: flex;
+
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
+@media screen and (min-width: 800px) {
+  nav {
+    position: relative;
+    transition: none;
+    transform: scale(1, 1);
+    background: none;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+@media (min-width: 800px) {
+  .logo {
+    display: none;
+  }
 }
-
-.App-link {
-  color: #09d3ac;
+@media (min-width: 800px) {
+  .logoM {
+    justify-content: flex-start;
+    display: flex;
+  }
+  .logoG {
+    justify-content: flex-end;
+    display: flex;
+  }
+}
+@media (max-width: 800px) {
+  .logoM {
+    display: none;
+  }
+  .logo1 {
+    margin-top: 86px;
+  }
+  .container1 {
+    justify-content: space-evenly;
+  }
 }
