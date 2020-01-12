@@ -3,7 +3,7 @@ import "../App.css";
 
 export const Footer = () => {
   return (
-    <footer>
+    <footer className="footer">
       <svg
         viewBox="0 -20 700 110"
         width="100%"
