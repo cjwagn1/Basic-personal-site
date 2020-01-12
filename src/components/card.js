@@ -12,12 +12,20 @@ import data from "../data/card.json";
 
 const useStyles = makeStyles({
   card: {
-    width: 350,
-    backgroundColor: "#379683",
+    width: 250,
+    backgroundColor: "#950740",
     color: "white"
   },
   media: {
-    height: 350
+    height: 0,
+    paddingTop: "80%",
+    objectFit: "cover"
+  },
+  test: {
+    display: "flex",
+    justifyContent: "right",
+    width: 250,
+    color: "#950740"
   }
 });
 
@@ -28,7 +36,7 @@ const CardStuff = props => {
     <Card className={classes.card}>
       <CardActionArea>
         <CardMedia
-          className={classes.media}
+          className="mediatest"
           image={props.picture}
           title={props.name}
         />
@@ -42,8 +50,14 @@ const CardStuff = props => {
         </CardContent>
       </CardActionArea>
       <CardActions>
-        <Button size="small" color="primary">
-          <a href={props.link}>Learn More</a>
+        <Button
+          variant="outlined"
+          size="medium"
+          color="default"
+          href={props.link}
+          target="_blank"
+        >
+          Learn more
         </Button>
       </CardActions>
     </Card>

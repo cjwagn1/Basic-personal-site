@@ -18,7 +18,7 @@ export const Header = () => {
           target="_blank"
         >
           <Octicon icon={MarkGithub} />
-          &nbsp;
+
           <Octicon icon={LogoGithub} />
         </a>
       </div>
@@ -35,7 +35,7 @@ export const Header = () => {
             target="_blank"
           >
             <Octicon icon={MarkGithub} />
-            &nbsp;
+
             <Octicon icon={LogoGithub} />
           </a>
         </nav>
