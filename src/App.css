@@ -80,9 +80,12 @@ nav {
 }
 
 .footer {
-  position: relative;
+  position: absolute;
   padding-top: 20px;
   overflow: hidden;
+  bottom: 0;
+  width: 100vw;
+  margin-bottom: -4px;
 }
 
 @media screen and (min-width: 800px) {
@@ -120,5 +123,14 @@ nav {
   }
   .container1 {
     justify-content: space-evenly;
+  }
+}
+@media (max-width: 1400px) {
+  .footer {
+    position: relative;
+    padding-top: 20px;
+    overflow: hidden;
+
+    margin-bottom: -20px;
   }
 }
