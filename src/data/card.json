@@ -4,7 +4,7 @@
     "picture": "https://i.imgur.com/m9rxn5T.png",
     "name": "Music Visualizer",
     "descr": "",
-    "link": "https://github.com/cjwagn1/Divine-Visualizer"
+    "link": "https://cjwagn1.github.io/Divine-Visualizer/"
   },
 
   {
@@ -12,7 +12,7 @@
     "picture": "https://i.imgur.com/GzmUWzR.png",
     "name": "Chihuahua Rescue",
     "descr": "",
-    "link": "https://github.com/cjwagn1/Chihuahua-Rescue-Midwest"
+    "link": "https://www.chihuahuarescuemidwest.org/"
   },
   {
     "id": 4,
@@ -26,13 +26,7 @@
     "picture": "https://i.imgur.com/NYpKZvM.png",
     "name": "Brokenlamp",
     "descr": "",
-    "link": "https://github.com/BrokenLamp/Website"
-  },
-  {
-    "id": 5,
-    "picture": "https://i.imgur.com/dA09iKU.png",
-    "name": "Weather app",
-    "descr": "",
-    "link": "https://github.com/cjwagn1/weather"
+    "link": "https://github.com/BrokenLamp"
   }
+ 
 ]
